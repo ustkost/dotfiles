@@ -1,0 +1,90 @@
+{
+    "layer": "top",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 8,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "tray",
+        "hyprland/language",
+        "battery",
+        "network",
+        "pulseaudio",
+    ],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "tooltip": false,
+        "persistent-workspaces": {
+          "eDP-1": [1, 2, 3, 4, 5]
+        }
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H:%M - %a, %d %b %Y}",
+        "tooltip": false
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "⚡ {capacity}%",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "format-icons": [
+          " ",  // <10%
+          " ",  // 10–25%
+          " ",  // 25–50%
+          " ",  // 50–75%
+          " "   // 75–100%
+        ],
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi" : "ᯤ {essid}",
+        "format-disconnected" : "no network",
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "vol›ᛒ {volume}%",
+        "format-icons": {
+          "headphones": " ",
+          "hdmi": " ",
+          "speaker": "  ",
+          "default": ["  ", "  "]
+        },
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+	"hyprland/language": {
+		"format": "{short}",
+	},
+}
