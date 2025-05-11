@@ -73,6 +73,7 @@
         "max-volume": 150,
         "format": "{icon} {volume}%",
         "format-bluetooth": "vol›ᛒ {volume}%",
+				"format-muted": "🔇",
         "format-icons": {
           "headphones": " ",
           "hdmi": " ",
