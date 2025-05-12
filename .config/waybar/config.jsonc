@@ -18,6 +18,7 @@
 
     "modules-right": [
         "tray",
+				"custom/vpn",
         "hyprland/language",
         "battery",
         "network",
@@ -88,4 +89,12 @@
 	"hyprland/language": {
 		"format": "{short}",
 	},
+
+	"custom/vpn": {
+		"format": "VPN {}",
+		"tooltip": false,
+		"exec": "~/.config/waybar/vpn-control.sh --status",
+		"on-click": "~/.config/waybar/vpn-control.sh --toggle",
+		"signal": 8
+	}
 }
