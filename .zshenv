@@ -14,3 +14,6 @@ export SAVEHIST=10000
 # editor
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+# terminal
+export TERMINAL=alacritty
